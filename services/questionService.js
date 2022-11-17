@@ -15,18 +15,3 @@ export async function getAllQuestions() {
 
   return sanitizedQuestions;
 }
-
-/* export async function getQuestionById(id) {
-  await dbConnect();
-
-  const question = await Question.findById(id);
-
-  const sanitizedQuestion = {
-    id: question.id,
-    question: question.question,
-    answer: question.answer,
-    options: question.options,
-  };
-  console.log(sanitizedQuestion);
-  return sanitizedQuestion;
-} */
